@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .h-background {
+    height: calc(100vh - 60px);
+  }
+
+  .action {
+    display: none !important;
+  }
+
+  .action.current {
+    display: inline-flex !important;
+  }
+
+  .active-step {
+    @apply h-3 w-3 rounded-full bg-gray-900 shadow-md;
+  }
+
+  .inactive-step {
+    @apply h-3 w-3 rounded-full bg-gray-300 shadow-md;
+  }
+}
+
+* {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+
+#survey {
+  display: none;
+}
