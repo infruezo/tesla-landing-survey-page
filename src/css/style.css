@@ -427,6 +427,7 @@ video {
 
 .action {
   display: none !important;
+  animation: Show 0.75s ease-in-out 0s 1 normal none;
 }
 
 .action.current {
@@ -987,11 +988,6 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-teal-500{
-  --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
-}
-
 .accent-gray-900{
   accent-color: #111827;
 }
@@ -1050,6 +1046,16 @@ input[type="radio"] {
 
 #survey {
   display: none;
+}
+
+@keyframes Show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .hover\:cursor-pointer:hover{
